@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let x = prompt("enter your marks:");
+
+        let grade = parseInt(x);
+
+
+
+        if (grade <= 0) {
+            document.write("envalid input !");
+        }
+
+        else if (grade >= 90 && grade < 100) {
+            document.write("your grade +A");
+        }
+
+        else if (grade >= 80 && grade < 90) {
+            document.write("your grade A");
+        }
+
+        else if (grade >= 70 && grade < 80) {
+            document.write("your grade B");
+        }
+
+        else if (grade >= 60 && grade < 70) {
+            document.write("your grade is C");
+        }
+
+        else if (grade >= 50 && grade < 60) {
+
+            document.write("your grade is D");
+        }
+
+        else if (grade >= 40 && grade < 50) {
+
+            document.write("your grade is E");
+        }
+
+        else if (grade>40) {
+
+            document.write("you are fail in exam !");
+        }
+
+
+    </script>
+</body>
+
+</html>
