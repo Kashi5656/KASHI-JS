@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="bg">
+    <table>
+        <tr>
+            <td colspan="3"><input type="text" id="text"></td>
+            <td><input type="button" value="C" class="H" onclick="clr()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" class="H" onclick="get(1)"></td>
+            <td><input type="button" value="2" class="H" onclick="get(2)"></td>
+            <td><input type="button" value="3" class="H" onclick="get(3)"></td>
+            <td><input type="button" value="/" class="H" onclick="get('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" class="H" onclick="get(4)"></td>
+            <td><input type="button" value="5" class="H" onclick="get(5)"></td>
+            <td><input type="button" value="6" class="H" onclick="get(6)"></td>
+            <td><input type="button" value="-" class="H" onclick="get('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" class="H" onclick="get(7)"></td>
+            <td><input type="button" value="8" class="H" onclick="get(8)"></td>
+            <td><input type="button" value="9" class="H" onclick="get(9)"></td>
+            <td><input type="button" value="+" class="H" onclick="get('+')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="." class="H" onclick="get('.')"></td>
+            <td><input type="button" value="0" class="H" onclick="get(0)"></td>
+            <td><input type="button" value="=" class="H" onclick="equation()"></td>
+            <td><input type="button" value="*" class="H" onclick="get('*')"></td>
+        </tr>
+    </table>
+   
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

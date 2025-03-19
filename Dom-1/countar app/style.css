@@ -1,0 +1,36 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+#bg
+{
+    height: 100px;
+    width: 240px;
+    background-color: aquamarine;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 9px;
+}
+#zero
+{
+    height: 25px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.532);
+    padding: 5px;
+    
+    
+}
+#btn,#btn2,#btn3,#btn4
+{
+    height: 20px;
+    width: 40px;
+    background-color: rgb(255, 168, 47);
+    border: none;
+    border-radius: 4px;
+}
