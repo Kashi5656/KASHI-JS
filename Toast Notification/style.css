@@ -1,0 +1,89 @@
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .button button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+        background-color: #6366f1;
+        color: white;
+    }
+
+    .button button:hover {
+        background-color: #4f46e5;
+    }
+
+    #Toastbox {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .toast {
+        min-width: 250px;
+        padding: 14px 18px;
+        border-radius: 8px;
+        font-size: 15px;
+        color: #111827; /* Dark gray for readability */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        animation: slideIn 0.4s, fadeOut 0.4s 2.6s forwards;
+        opacity: 1;
+    }
+
+    .toast.success {
+        background-color: #d1fae5; /* Light mint green */
+        border-left: 6px solid #10b981;
+    }
+
+    .toast.error {
+        background-color: #fee2e2; /* Light rose pink */
+        border-left: 6px solid #ef4444;
+    }
+
+    .toast.invalid {
+        background-color: #fef9c3; /* Buttery yellow */
+        border-left: 6px solid #f59e0b;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
+
