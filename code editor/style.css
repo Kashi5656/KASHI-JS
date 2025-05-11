@@ -1,0 +1,82 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .continor {
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Left Side - Editor Panel */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #252526;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Right Side - Output Panel */
+  .right {
+    flex: 1;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  /* Labels */
+  .left label,
+  .right label {
+    font-size: 14px;
+    color: #569cd6;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Textareas */
+  textarea {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    height: 25%;
+    outline: none;
+    font-family: 'Consolas', monospace;
+  }
+  
+  /* Output iframe */
+  #output {
+    flex: 1;
+    border: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+  

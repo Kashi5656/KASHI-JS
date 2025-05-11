@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- icon -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="continor">
+        <div class="left">
+            <label>HTML<i class="ri-html5-line"></i></label>
+            <textarea id="html" onkeyup="coderun()"></textarea>
+
+            <label>CSS<i class="ri-css3-line"></i></label>
+            <textarea id="css" onkeyup="coderun()"></textarea>
+
+            <label>JS<i class="ri-javascript-line"></i></label>
+            <textarea id="js" onkeyup="coderun()"></textarea>
+        </div>
+        <div class="right">
+            <label>OUTPUT <i class="ri-code-box-line"></i></label>
+            <iframe id="output">OUTPUT</iframe>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
